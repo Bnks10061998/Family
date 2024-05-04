@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+.gallery{
+    float: left;
+    height:10.33%;
+    width:8.33%;
+    padding: 2px;
+    object-fit: cover;
+}
+
+
+.gallery > div{
+    height: 25%;
+    background-size: cover;
+    
+}
+
+.row::after{
+    content: "";
+    clear:both;
+    display: table;
+}
+@media screen and (max-width:768px) {
+    .gallery{
+        
+        width: 25%;
+        
+    }
+}
